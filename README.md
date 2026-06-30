@@ -30,17 +30,17 @@ Ce projet est une base d'étude pour comprendre le fonctionnement des **Agents I
     MAX_ITERATIONS=5
    ```
 
-1. **Lancer l'agent (Mode Interactif)** :
+3. **Construire l'image Docker** :
+   La première fois, ou après chaque modification du code, construisez l'image :
+   ```bash
+   docker-compose build
+   ```
+
+4. **Lancer l'agent (Mode Interactif)** :
    C'est la commande recommandée pour pouvoir discuter avec l'agent :
    ```bash
    docker-compose run agent-ia
    ```
-
-2. **Mise à jour après modification du code** :
-   Si vous modifiez les outils ou la logique, reconstruisez l'image :
-    ```bash
-    docker-compose up --build
-    ```
 
 ---
 ## 🧪 Exemples d'utilisation
